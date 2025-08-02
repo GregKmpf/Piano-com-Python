@@ -1,87 +1,60 @@
-Piano Simples com Python
-Este é um projeto de um piano virtual simples desenvolvido em Python. Ele utiliza a biblioteca tkinter para a criação da interface gráfica e a biblioteca pygame para a reprodução dos sons das notas musicais.
 
-✨ Funcionalidades
-Interface Gráfica: Exibe uma fileira de teclas de piano brancas.
 
-Interatividade: Toca o som de uma nota musical ao:
+🎹 Piano Simples com Python
+Um piano virtual feito em Python, usando tkinter para a interface e pygame para o som.
 
-Clicar em uma tecla na janela.
+É um projeto simples, ótimo para quem está começando a programar com interfaces gráficas ou simplesmente quer um passatempo musical no computador.
 
-Pressionar a tecla do teclado correspondente.
+O que ele faz?
+Interface limpa com as teclas de um piano.
 
-Feedback Visual: As teclas pressionadas mudam de cor e relevo, simulando o ato de tocar um piano real.
+Toque de duas formas: você pode usar o mouse para clicar nas teclas ou usar o teclado do seu computador para uma resposta mais rápida.
 
-Mapeamento de Teclado: As teclas Z, X, C, V, B, N, M são mapeadas para as notas Dó, Ré, Mi, Fá, Sol, Lá, Si, respectivamente.
+Feedback visual: a tecla que você pressiona muda de cor, para você saber exatamente o que está tocando.
 
-📋 Pré-requisitos
-Antes de começar, você precisará ter o Python 3 instalado em sua máquina.
+Como Instalar e Rodar
+Para rodar o projeto na sua máquina, siga estes passos:
 
-As bibliotecas Python necessárias são:
-
-pygame: para manipulação de áudio.
-
-tkinter: para a interface gráfica (geralmente já vem incluída na instalação padrão do Python).
-
-🚀 Instalação e Configuração
-Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
-
-1. Clonar o Repositório
-Primeiro, clone este repositório para a sua máquina local usando o comando:
+1. Clone o projeto
+Use o git para baixar os arquivos do repositório:
 
 Bash
 
 git clone <URL_DO_SEU_REPOSITORIO_GIT>
-cd <NOME_DO_DIRETORIO_DO_PROJETO>
-2. Criar e Ativar o Ambiente Virtual (Recomendado)
-É uma boa prática usar um ambiente virtual para isolar as dependências do projeto.
-
-No Linux ou macOS:
+cd <NOME_DA_PASTA_DO_PROJETO>
+2. Crie um ambiente virtual (Opcional, mas recomendado)
+Isso ajuda a manter as dependências do projeto organizadas e separadas do resto do seu sistema.
 
 Bash
 
+# No Linux ou macOS
 python3 -m venv venv
 source venv/bin/activate
-No Windows:
 
-Bash
-
+# No Windows
 python -m venv venv
 .\venv\Scripts\activate
-
-3. Instalar as Dependências
-Com o ambiente virtual ativado, instale a biblioteca pygame:
+3. Instale o pygame
+O projeto precisa da biblioteca pygame para tocar os sons. Instale-a com o pip:
 
 Bash
 
+pip install pygame
+(O tkinter geralmente já vem com o Python, então não precisa se preocupar com ele).
 
-4. Organizar os Arquivos de Áudio
-Para que o piano funcione, você precisa dos arquivos de som em formato .mp3.
+4. Adicione os sons das notas
+O piano precisa dos arquivos de áudio .mp3 para funcionar.
 
-Crie uma pasta chamada mp3 Notes no mesmo diretório onde está o seu script Python.
+Na pasta principal do projeto, crie um novo diretório chamado mp3 Notes.
 
-Coloque os seguintes arquivos de áudio dentro desta pasta:
+Coloque os arquivos de som das notas dentro dessa pasta.
 
-c3.mp3
-
-d3.mp3
-
-e4.mp3
-
-f3.mp3
-
-g3.mp3
-
-a3.mp3
-
-b3.mp3
-
-A estrutura final do seu projeto deve ser semelhante a esta:
+A estrutura de pastas deve ficar assim:
 
 seu-projeto/
-├── seu_script_de_piano.py  # O arquivo de código que você criou
-├── venv/                     # Pasta do ambiente virtual
-└── mp3 Notes/                # Pasta com os arquivos de som
+├── seu_script_de_piano.py
+├── venv/
+└── mp3 Notes/
     ├── c3.mp3
     ├── d3.mp3
     ├── e4.mp3
@@ -89,18 +62,16 @@ seu-projeto/
     ├── g3.mp3
     ├── a3.mp3
     └── b3.mp3
-▶️ Como Executar
-Após concluir a instalação e configuração, certifique-se de que seu ambiente virtual (venv) está ativado e execute o seguinte comando no terminal:
+▶️ Executando o Piano
+Com tudo pronto, basta rodar o script Python no seu terminal:
 
 Bash
 
 python seu_script_de_piano.py
-(Substitua seu_script_de_piano.py pelo nome real do seu arquivo Python)
+A janela do piano vai aparecer, e é só começar a tocar!
 
-A janela do piano virtual será aberta e você poderá começar a tocar.
-
-🎹 Controles
-Você pode tocar as notas usando o mouse ou as seguintes teclas do seu teclado:
+🎹 Controles do Teclado
+Use o mouse para clicar nas teclas ou use a fileira de baixo do seu teclado para tocar as notas:
 
 Tecla	Nota Musical
 Z	Dó
